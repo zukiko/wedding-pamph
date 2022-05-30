@@ -18,6 +18,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
       <!-- Styles -->
+      <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
       
       <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
