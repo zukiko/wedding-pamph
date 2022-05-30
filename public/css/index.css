@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+}
+.main-wrapper {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  padding-top: 35px;
+}
+
+.main-img {
+  color: aliceblue;
+  height: 500px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/main-img.jpg);
+  margin: 0 35px;
+}
+
+.weed-invi {
+  position: absolute;
+  top: 250px;
+  background-color: #f4eee88f;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 2.3rem;
+}
+
+.name-date {
+  padding: 0 140px 30px 140px;
+  background: linear-gradient(28deg, #ddc8c1 0%, #ddc8c1 50%, #bf9288de 50%, #bf92887a 100%);
+  font-family: 'WindSong', cursive;
+}
+
+.gr-img {
+  padding-right: 40px;
+  padding-top: 15px;
+}
+
+.br-img {
+  padding-left: 40px;
+}
+
+.gr-name,
+.br-name {
+  z-index: 10;
+  font-size: 3.2rem;
+}
+
+.gr-name {
+  padding-right: 30px;
+}
+
+.and {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.date {
+  font-size: 2.0rem;
+  text-align: center;
+  color: #686464;
+  background-color: #ffffffb0;
+  padding: 26px 10px 46px 5px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.join {
+  font-family: 'Josefin Slab', serif;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: -30px 0px 47px -25px;
+  width: calc(100% + 50px);
+  font-size: 1.4rem;
+  background: #edc87afa;
+}
+
+.join::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #e9b340;
+}
+
+.gr-img img,
+.br-img img {
+  border-radius: 50%;
+  width: 330px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.groom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bride {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  font-family: 'Noto Serif JP', serif;
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.invi-btn {
+  background-color: #6496ab;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  bottom: 109px;
+  right: 32px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.invi-text {
+  color: #fff;
+  line-height: initial;
+}
+
+.login-btn {
+  margin-top: 40px;
+}
+
+.greeting-text {
+  line-height: 2;
+  width: 40%;
+  margin: 0 auto;
+  color: #363333;
+  font-size: 1rem;
+}
+
+.greeting-img {
+  background: linear-gradient(rgba(224, 221, 221, 0.6), rgba(224, 221, 221, 0.6)), url(../images/greeting-img3.jpg);
+  position: relative;
+}
+
+.fixed-bg {
+  height: 360px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.invi-info {
+  margin: 0 auto;
+  width: 58%;
+  background-image: linear-gradient(rgba(224, 221, 221, 0.6), rgba(224, 221, 221, 0.6)), url(../images/invi-info.jpg);
+  background-repeat: no-repeat;
+}
+
+.host,
+.information,
+.access {
+  margin-top: 80px;
+  padding-bottom: 10px;
+  z-index: 10;
+}
+
+.host h2,
+.information h2,
+.access h2 {
+  position: relative;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #363333;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 130px;
+}
+
+.host h2::before,
+.host h2::after,
+.information h2::before,
+.information h2::after,
+.access h2::before,
+.access h2::after {
+  position: absolute;
+  content: '';
+}
+
+.host h2::before,
+.information h2::before,
+.access h2::before {
+  top: -40px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border: 1px solid #363333;
+  border-radius: 50%;
+  background-color: #ddc8c1;
+}
+
+.host h2::after,
+.information h2::after,
+.access h2::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddc8c1;
+}
+
+.host h2 i,
+.information h2 i,
+.access h2 i {
+  font-size: 1.8rem;
+  line-height: 51px;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  color: #363333;
+}
+
+.host h2 span,
+.information h2 span,
+.access h2 span {
+  position: relative;
+  z-index: 1;
+  font-size: 1.7rem;
+  line-height: initial;
+  font-family: 'Josefin Slab', serif;
+  color: #363333;
+}
+
+.host-name p {
+  border-bottom: 0.5px solid #000;
+  line-height: inherit;
+  width: 45%;
+  margin: 0 auto;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.2rem;
+}
+
+.host-name h1 {
+  padding: 10px 0;
+  font-size: 1.7rem;
+}
+
+.information li,
+.access li {
+  padding: 10px 8px;
+}
+
+.information li:nth-child(3) {
+  font-size: 2.0rem;
+}
+
+.information li:nth-child(4),
+.information li:nth-child(6) {
+  font-size: 1.7rem;
+}
+
+iframe {
+  width: 50%;
+  vertical-align: bottom;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.host-name,
+.information ul,
+.access ul {
+  padding-top: 10px;
+  text-align: center;
+  margin: 0 130px;
+  background-color: #ffffff94;
+  padding-bottom: 5px;
+}
+
+.deadline {
+  padding-top: 60px;
+  text-align: center;
+  line-height: initial;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 907px) {
+  .invi-info {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .name-date {
+    padding: 0 30px 30px 30px;
+  }
+  .invi-info {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .join {
+    padding: 5px;
+    margin: -30px 0px 20px -25px;
+    width: calc(100% + 46px);
+    font-size: 1.3rem;
+  }
+  .date {
+    font-size: 1.8rem;
+    padding: 27px 10px 20px 5px;
+    margin: 0 40px;
+  }
+  .gr-img img, .br-img img {
+    width: 200px;
+    height: 100px;
+  }
+  .gr-name, .br-name {
+    font-size: 2.5rem;
+  }
+  .greeting-text {
+    width: 65%;
+  }
+  .host h2, .information h2, .access h2 {
+    margin: 0 100px;
+  }
+  .host-name, .information ul, .access ul {
+    margin: 0 100px;
+  }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 500px) {
+  .weed-invi {
+    font-size: 1.6rem;
+    top: 90px;
+    height: 50px;
+  }
+  .main-img {
+    height: 180px;
+    margin: 0;
+  }
+  .date {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    padding: 30px 10px 10px 5px;
+  }
+  .join {
+    margin: -30px 0px 10px -25px;
+    font-size: 1rem;
+  }
+  .gr-name {
+    padding-right: 35px;
+  }
+  .gr-name,
+  .br-name {
+    font-size: 1.8rem;
+  }
+  .gr-img img,
+  .br-img img {
+    width: 110px;
+    height: 80px;
+  }
+  .and {
+    font-size: 1.8rem;
+  }
+  .name-date {
+    padding: 0 10px 20px 10px;
+    background: linear-gradient(36deg, #ddc8c1 0%, #ddc8c1 50%, #bf9288de 50%, #bf92887a 100%);
+  }
+  .br-img {
+    padding-left: 25px;
+  }
+  .gr-img {
+    padding-right: 30px;
+  }
+  .greeting-text {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+  .invi-info {
+    width: 100%;
+    background-position: center;
+  }
+  .host h2, .information h2, .access h2 {
+    margin: 0 55px;
+  }
+  .host-name, .information ul, .access ul {
+    margin: 0 55px;
+  }
+  .invi-btn {
+    right: 5px;
+  }
+  .host-name h1 {
+    font-size: 1.5rem;
+  }
+  .fixed-bg {
+    background-attachment: inherit;
+  }
+}
+
+
+
