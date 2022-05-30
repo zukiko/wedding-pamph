@@ -7,9 +7,9 @@
       <div class="weed-invi">WEEDING INVITATION</div>
       <div class="main-container">
         <!-- WEB招待状回答ボタン -->
-        <%= link_to new_user_registration_path, class:"invi-btn" do %>
-          <p class='invi-text'>招待状に<br>回答する</p>
-        <% end %>
+        <a class="invi-btn" href="">
+          <p class="invi-text">招待状に<br>回答する</p>
+        </a>
         <!-- //WEB招待状回答ボタン -->
         <div class="name-date">
           <div class="invi-name">
