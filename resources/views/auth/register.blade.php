@@ -2,15 +2,24 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <!-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> -->
+                <div class="invi-top">
+                    <h1>WEDDING INVITATION</h1>
+                </div>
             </a>
         </x-slot>
+        <p><span>*</span> は必須項目です</p>
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
+
+            <!-- attendance -->
+            <label class="form-text">いずれかをお選び下さい<span>*</span></label><br>
+            <input type="radio" name="attendance" value="出席">ご出席
+            <input type="radio" name="attendance" value="欠席">ご欠席
 
             <!-- Name -->
             <div>
