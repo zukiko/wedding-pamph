@@ -12,11 +12,14 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
+        @yield('content')
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
